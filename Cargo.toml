@@ -1,0 +1,13 @@
+[package]
+name = "update-aws-cred"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = "1.0.63"
+colored = "2.1.0"
+
+[profile.release]
+opt-level = 3  # Optimization level (0-3)
+lto = true     # Enable Link Time Optimization
+codegen-units = 1  # Further optimize binary size by setting codegen units to 1
